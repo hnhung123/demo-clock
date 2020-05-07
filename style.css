@@ -17,7 +17,7 @@ body{
     width: 500px;
     height: 500px;
     position: relative;
-    border-radius: 250px;
+    border-radius: 50%;
     border:10px solid #111;
     background-color: #fff;
 }
