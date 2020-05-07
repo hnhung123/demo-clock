@@ -148,12 +148,13 @@ body{
     width: 1px;
     height: 40%;
 }
+
 .minute{
     width: 4px;
     height: 38%;
     border-radius: 2px;
 }
-.hour{
+.hand .hour{
     width: 8px;
     height: 28%;
     z-index: -1;
