@@ -1,7 +1,6 @@
 let secDiv = document.getElementById('second');
 let minDiv = document.getElementById('minute');
 let hourDiv=document.getElementById('hour');
-
 setInterval(()=>{
     let date = new Date;
     let second = date.getSeconds()/60;
