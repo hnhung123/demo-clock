@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    background: linear-gradient(45deg, #287486b4, #8fb636);
+}
+
+.clock{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 250px;
+    border:10px solid #111;
+    background-color: #fff;
+}
+
+.clock:before{
+    content: '';
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top:50%;
+    left:50%;
+    background: black;
+}
+
+.clock:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: linear-gradient(285deg,rgba(141,91,114,0.308),rgba(0,0,0,0.1) 50%);
+}
+.num{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.num::after{ 
+    content:'';
+    position: absolute;
+    width: 5px;
+    height:15px;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    background-color: #000;
+}
+.num1{
+    transform: rotate(30deg);
+}
+.num1 div{
+    transform: rotate(-30deg);
+}
+.num2{
+    transform: rotate(60deg);
+}
+.num2 div{
+    transform: rotate(-60deg);
+}
+.num3{
+    transform: rotate(90deg);
+}
+.num3 div{
+    transform: rotate(-90deg);
+}
+.num4{
+    transform: rotate(120deg);
+}
+.num4 div{
+    transform: rotate(-120deg);
+}
+.num5{
+    transform: rotate(150deg);
+}
+.num5 div{
+    transform: rotate(-150deg);
+}
+.num6{
+    transform: rotate(180deg);
+}
+.num6 div{
+    transform: rotate(-180deg);
+}
+.num7{
+    transform: rotate(210deg);
+}
+.num7 div{
+    transform: rotate(-210deg);
+}
+.num8{
+    transform: rotate(240deg);
+}
+.num8 div{
+    transform: rotate(-240deg);
+}
+.num9{
+    transform: rotate(270deg);
+}
+.num9 div{
+    transform: rotate(-270deg);
+}
+.num10{
+    transform: rotate(300deg);
+}
+.num10 div{
+    transform: rotate(-300deg);
+}
+.num11{
+    transform: rotate(330deg);
+}
+.num11 div{
+    transform: rotate(-330deg);
+}
+.hand{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hand div{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #000;
+}
+
+.second{
+    width: 1px;
+    height: 40%;
+}
+.minute{
+    width: 4px;
+    height: 38%;
+    border-radius: 2px;
+}
+.hour{
+    width: 8px;
+    height: 28%;
+    z-index: -1;
+    border-radius: 4px;
+    background-color: red;
+}
+
+
